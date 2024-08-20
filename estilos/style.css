@@ -128,7 +128,7 @@ body {
     background-color: var(--cor-terciaria);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .cabeçalho__menu {
         padding: 0% 15%;
         gap: 20px;
