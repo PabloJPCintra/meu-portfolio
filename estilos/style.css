@@ -35,13 +35,14 @@ body {
 }
 
 .cabeçalho__menu {
+    padding: 0% 33%;
     display: flex;
     gap: 80px;
 }
 
 .cabeçalho__menu__link {
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -50,24 +51,26 @@ body {
 .apresentação {
     padding: 4.8% 15%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentação__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
 .apresentação__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--font-primaria);
 }
  
 .apresentação__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
     text-decoration: none;
 }
@@ -76,7 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 5px;
     align-items: center;
     gap: 30px;
@@ -85,10 +88,10 @@ body {
 .apresentação__links__subtitulo {
     font-family: var(--font-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentação__links__link {
+.apresentação__links__navegação {
     /* background-color: #22D4FD; */
     display: flex;
     justify-content: center;
@@ -97,7 +100,7 @@ body {
     width: 378px;
     text-align: center;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -109,12 +112,35 @@ body {
     background-color: var(--cor-hover);
 }
 
+.apresentação__imagem {
+    width: 50%;
+}
+
 .rodapé {
     padding: 24px;
     text-align: center;
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px) {
+    .cabeçalho {
+        padding: 10% ;
+    }
+
+    .cabeçalho__menu {
+        justify-content: center;
+    }
+
+    .apresentação {
+        flex-direction: column;
+        pad: 5% 5%;
+    }    
+
+    .apresentação__conteudo {
+        width: auto;
+    }
 }
